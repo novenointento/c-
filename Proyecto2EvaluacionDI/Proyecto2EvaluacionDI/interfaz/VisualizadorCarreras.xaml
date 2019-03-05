@@ -1,0 +1,27 @@
+﻿<Window x:Class="Proyecto2EvaluacionDI.VisualizadorCarreras"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="724.736" Width="531.856">
+    <Grid>
+        <Label x:Name="LabelCarrera" Content="Carrera&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,21,0,0" VerticalAlignment="Top" Width="69" Height="25"/>
+        <ComboBox x:Name="comboBoxCarrera" ItemsSource="{Binding Path=listaCarreras}" HorizontalAlignment="Left" Margin="127,24,0,0" VerticalAlignment="Top" Width="378" SelectionChanged="comboBoxCarrera_SelectionChanged"/>
+        <DataGrid CanUserAddRows="False" x:Name="tablaAvituallamientos" ItemsSource="{Binding Path=listaAvituallamientos}" HorizontalAlignment="Left" Margin="127,110,0,0" VerticalAlignment="Top" Height="107" Width="378" SelectionChanged="tablaAvituallamientos_SelectionChanged"/>
+        <Label Content="Avituallamientos" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top"/>
+        <DataGrid CanUserAddRows="False" x:Name="tablaMaterialEnElPunto" ItemsSource="{Binding Path=listaMateriales}" HorizontalAlignment="Left" Margin="127,268,0,0" VerticalAlignment="Top" Height="107" Width="378"/>
+        <Label Content="Material en el punto" HorizontalAlignment="Left" Margin="5,268,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonAltaAvituallamiento" Content="Alta Punto" HorizontalAlignment="Left" Margin="430,229,0,0" VerticalAlignment="Top" Width="75" Click="buttonAceptar_Click"/>
+        <Button x:Name="buttonCarrera" Content="Alta carrera" HorizontalAlignment="Left" Margin="430,57,0,0" VerticalAlignment="Top" Width="75" Click="df_Click"/>
+        <DataGrid CanUserAddRows="False" x:Name="tablaMaterialDisponible1" ItemsSource="{Binding Path=listaMaterialesDisponibles}" HorizontalAlignment="Left" Margin="127,471,0,0" VerticalAlignment="Top" Height="107" Width="378"/>
+        <Label Content="Material disponible" HorizontalAlignment="Left" Margin="5,471,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonAltaMaterial" Content="Alta materiales" HorizontalAlignment="Left" Margin="399,594,0,0" VerticalAlignment="Top" Width="106" Click="buttonAltaMaterial_Click"/>
+        <Button x:Name="botonAnadirMaterial" Content="Añadir material" HorizontalAlignment="Left" Margin="385,389,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click_1"/>
+        <Button x:Name="botonBorrarCarrera" Content="Eliminar" HorizontalAlignment="Left" Margin="168,57,0,0" VerticalAlignment="Top" Width="75" Click="botonBorrarCarrera_Click"/>
+        <Button x:Name="botonModificar" Content="Modificar" HorizontalAlignment="Left" Margin="316,57,0,0" VerticalAlignment="Top" Width="75" Click="botonModificar_Click"/>
+        <Button x:Name="botonBorrarAvituallamiento" Content="Eliminar" HorizontalAlignment="Left" Margin="168,229,0,0" VerticalAlignment="Top" Width="75" Click="botonBorrarAvituallamiento_Click"/>
+        <Button x:Name="botonEliminarMaterial" Content="Eliminar" HorizontalAlignment="Left" Margin="170,594,0,0" VerticalAlignment="Top" Width="75" Click="botonEliminarMaterial_Click"/>
+        <Button x:Name="botonEliminarMaterialPunto" Content="Eliminar" HorizontalAlignment="Left" Margin="170,389,0,0" VerticalAlignment="Top" Width="75" Click="botonEliminarMaterialPunto_Click"/>
+        <Button x:Name="botonModificarAvituallamiento" Content="Modificar" HorizontalAlignment="Left" Margin="316,229,0,0" VerticalAlignment="Top" Width="75" Click="botonModificarAvituallamiento_Click"/>
+        <Button x:Name="botonModificarMateriales" Content="Modificar" HorizontalAlignment="Left" Margin="296,594,0,0" VerticalAlignment="Top" Width="75" Click="botonModificarMateriales_Click"/>
+
+    </Grid>
+</Window>
